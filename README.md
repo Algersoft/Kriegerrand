@@ -1,4 +1,4 @@
-![image](https://github.com/algersoft/docs/blob/master/logos/Krieggerrand-logo-git.png)
+![image](https://github.com/algersoft/docs/blob/logos/Krieggerrand-logo-git.png)
 
 Current Status: In Development
 
