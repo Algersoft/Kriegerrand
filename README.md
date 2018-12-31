@@ -1,4 +1,4 @@
-![image](https://github.com/KriegerrandProject/docs/blob/master/images/Kriegerrand-Logo-Github-2.png)
+![image](https://github.com/KriegerrandProject/docs/blob/master/logos/Krieggerrand-logo-git.png)
 
 Current Status: In Development
 
