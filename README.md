@@ -29,7 +29,7 @@ If you are using Clang, you will need Clang 5.0 or higher. You will also need li
 - `sudo pip install cmake`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch https://github.com/KriegerrandProject/Kriegerrand`
+- `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
 - `cd Kriegerrand`
 - `mkdir build`
 - `cd build`
