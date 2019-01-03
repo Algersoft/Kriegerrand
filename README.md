@@ -39,7 +39,7 @@ If you are using Clang, you will need Clang 5.0 or higher. You will also need li
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./TurtleCoind --version`
+- `./Kiegerrand --version`
 
 ##### Clang setup, on Ubuntu
 
@@ -63,8 +63,8 @@ You need to modify the below command for your version of ubuntu - see https://ap
 - `sudo pip install cmake`
 - `export CC=clang-6.0`
 - `export CXX=clang++-6.0`
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
+- `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
+- `cd Kriegerrand`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -73,7 +73,7 @@ You need to modify the below command for your version of ubuntu - see https://ap
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./TurtleCoind --version`
+- `./MindBraind --version`
 
 ##### Generic Linux
 
@@ -82,8 +82,8 @@ Ensure you have the dependencies listed above.
 If you want to use clang, ensure you set the environment variables `CC` and `CXX`.
 See the ubuntu instructions for an example.
 
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
+- `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
+- `cd Kriegerrand`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -92,7 +92,7 @@ See the ubuntu instructions for an example.
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./TurtleCoind --version`
+- `./MindBraind --version`
 
 #### Apple
 
@@ -105,8 +105,8 @@ The binaries will be in the `src` folder when you are complete.
 
 ##### Building
 
-- `git clone -b master --single-branch https://github.com/turtlecoin/turtlecoin`
-- `cd turtlecoin`
+- `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
+- `cd Kriegerrand`
 - `mkdir build && cd $_`
 - `cmake ..` or `cmake -DBOOST_ROOT=<path_to_boost_install> ..` when building
   from a specific boost install. If you used brew to install boost, your path is most likely `/usr/local/include/boost.`
@@ -115,7 +115,7 @@ The binaries will be in the `src` folder when you are complete.
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./TurtleCoind --version`
+- `./MindBraind --version`
 
 If your version of gcc is too old, you may need to run:
 
@@ -134,18 +134,18 @@ If your version of gcc is too old, you may need to run:
 ##### Building
 
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2017'.
-- `cd <your_turtlecoin_directory>`
+- `cd <your_kriegerrand_directory>`
 - `mkdir build`
 - `cd build`
 - `set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin";%PATH%`
 - `cmake -G "Visual Studio 15 2017 Win64" .. -DBOOST_ROOT=C:/local/boost_1_68_0` (Or your boost installed dir.)
-- `MSBuild TurtleCoin.sln /p:Configuration=Release /m`
+- `MSBuild Kriegerrand.sln /p:Configuration=Release /m`
 
 The binaries will be in the `src/Release` folder when you are complete.
 
 - `cd src`
 - `cd Release`
-- `TurtleCoind.exe --version`
+- `MindBraind.exe --version`
 
 #### Raspberry Pi 3 B+
 The following images are known to work. Your operation system image **MUST** be 64 bit.
@@ -160,8 +160,8 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 
 ##### Building
 
-- `git clone -b master --single-branch https://github.com/algersoft/kriegerrand`
-- `cd turtlecoin`
+- `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
+- `cd Kriegerrand`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -170,10 +170,13 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./Kriegerd --version`
+- `./MindBraind --version`
 
-#### Thanks
-Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Community
+#### Special Thanks
+Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin, Pigley I, Pigley II, Neil Peart, Lucky Yates, r/ArcherFX, Mitsuko Miyazumi, Creedence Clearwater Revival, TOR Project, International Waters, 触手強姦, C20H25N3O, Archer and FX (Please Don't Sue Us), Cyborg and Bum Shock fights, Pam, and the Entire Algersoft and Kriegerrand Community.
+
+#### Dedications
+Dedicated to the Fond Memories of Pigley I, Pigley II and Chet...poor Chet. R.I.P.
 
 #### Props
 Proud Fork of TurtleCoin
