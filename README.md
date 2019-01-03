@@ -2,7 +2,7 @@
 
 Current Status: In Development
 
-Learn more at our HQ: https://Kriegerrand.net
+Learn more at our HQ: https://Kriegerrand.com
 
 If you would like to compile yourself, read on.
 
