@@ -46,7 +46,7 @@ const unsigned EMISSION_SPEED_FACTOR                         = 19;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 /* Premine amount */
-const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(105526500000);
+const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(0);
 
 /* How to generate a premine:
 
@@ -246,7 +246,7 @@ const char     LATEST_VERSION_URL[]                          = "https://www.krie
 const std::string LICENSE_URL                                = "https://github.com/Algersoft/Kriegerrand/blob/master/LICENSE";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
-    {  0xc6, 0x6c, 0x6a, 0x7c, 0xc2, 0x62, 0x26, 0x61, 0x66, 0xf6, 0x66, 0xa6, 0xd6, 0xc6, 0x67, 0xe9  }
+    {  0xc8, 0x3c, 0x6a, 0x3c, 0xd6, 0x42, 0x57, 0x6f, 0x26, 0xf5, 0x6e, 0xe6, 0xd3, 0xc1, 0x87, 0xd9  }
 };
 
 const char* const SEED_NODES[] = {
