@@ -180,7 +180,7 @@ Dedicated to the Fond Memories of Pigley I, Pigley II and Chet...poor Chet. R.I.
 
 #### Props
 Proud Fork of TurtleCoin
-![image](https://user-images.githubusercontent.com/34389545/35821974-62e0e25c-0a70-11e8-87dd-2cfffeb6ed47.png)
+![image](https://raw.githubusercontent.com/Algersoft/Kriegerrand/master/logos/turtlecoin_stacked_color.png)![image](https://raw.githubusercontent.com/Algersoft/Kriegerrand/master/logos/Cryptonote-Logo.png)![image](https://raw.githubusercontent.com/Algersoft/Kriegerrand/master/logos/bytecoinx.png)
 
 ### Copypasta for license when editing files
 
