@@ -1,7 +1,7 @@
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018, The TurtleCoin Developers
-// Copyright (c) 2018, Algersoft (Kriegerrand Developers)
+// Copyright (c) 2019, Algersoft (Kriegerrand Developers)
 // Please see the included LICENSE file for more information.
 
 #pragma once
@@ -242,7 +242,7 @@ const uint64_t DATABASE_READ_BUFFER_MB_DEFAULT_SIZE          = 10;
 const uint32_t DATABASE_DEFAULT_MAX_OPEN_FILES               = 100;
 const uint16_t DATABASE_DEFAULT_BACKGROUND_THREADS_COUNT     = 2;
 
-const char     LATEST_VERSION_URL[]                          = "https://www.kriegerrand.com/latest";
+const char     LATEST_VERSION_URL[]                          = "http://www.kriegerrand.com/latest";
 const std::string LICENSE_URL                                = "https://github.com/Algersoft/Kriegerrand/blob/master/LICENSE";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
