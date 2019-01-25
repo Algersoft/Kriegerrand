@@ -161,18 +161,15 @@ const uint64_t FORK_HEIGHTS[] =
 {
      40666, // 0
     100666, // 1
-    300666, // 2
-    420666, // 3
-    600666, // 4
-    666666, // 5
-    777666, // 6
-    999666, // 7
-   1200666, // 8
-   1666666, // 9
+    420666, // 2
+    600666, // 3
+    666666, // 4
+    999666, // 5
+   1200666, // 6
 };
 
 /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 9;
+const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 6;
 
 const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
