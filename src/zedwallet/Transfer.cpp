@@ -1,5 +1,5 @@
 // Copyright (c) 2018, The TurtleCoin Developers
-// 
+// Copyright (c) 2019, AlgerSoft (Kriegerrand Developers)
 // Please see the included LICENSE file for more information.
 
 ///////////////////////////////
@@ -17,22 +17,14 @@
 
 #include "IWallet.h"
 
-/* NodeErrors.h and WalletErrors.h have some conflicting enums, e.g. they
-   both export NOT_INITIALIZED, we can get round this by using a namespace */
-namespace NodeErrors
-{
-    #include <NodeRpcProxy/NodeErrors.h>
-}
+#include <NodeRpcProxy/NodeErrors.h>
 
-#include <zedwallet/ColouredMsg.h>
+#include <Utilities/ColouredMsg.h>
 #include <zedwallet/Fusion.h>
 #include <zedwallet/Tools.h>
 #include <config/WalletConfig.h>
 
-namespace WalletErrors
-{
-    #include <Wallet/WalletErrors.h>
-}
+#include <Wallet/WalletErrors.h>
 
 #include <Wallet/WalletGreen.h>
 #include <Wallet/WalletUtils.h>
@@ -296,10 +288,7 @@ void transfer(std::shared_ptr<WalletInfo> walletInfo, uint32_t height,
 
     const uint64_t balance = walletInfo->wallet.getActualBalance();
 
-    const uint64_t balanceNoDust = walletInfo->wallet.getBalanceMinusDust
-    (
-        {walletInfo->walletAddress}
-    );
+    const uint64_t balanceNoDust = walletInfo->wallet.getBalanceMinusDust({});
     
     const auto maybeAddress = getAddress("What address do you want to transfer"
                                          " to?: ");
@@ -642,13 +631,13 @@ bool handleTransferError(const std::system_error &e,
 
     switch (e.code().value())
     {
-        case WalletErrors::CryptoNote::error::WRONG_AMOUNT:
+        case CryptoNote::error::WRONG_AMOUNT:
         {
             wrongAmount = true;
             [[fallthrough]];
         }
-        case WalletErrors::CryptoNote::error::MIXIN_COUNT_TOO_BIG:
-        case NodeErrors::CryptoNote::error::INTERNAL_NODE_ERROR:
+        case CryptoNote::error::MIXIN_COUNT_TOO_BIG:
+        case CryptoNote::NodeError::INTERNAL_NODE_ERROR:
         {
     
             if (wrongAmount)
@@ -692,8 +681,8 @@ bool handleTransferError(const std::system_error &e,
 
             break;
         }
-        case NodeErrors::CryptoNote::error::NETWORK_ERROR:
-        case NodeErrors::CryptoNote::error::CONNECT_ERROR:
+        case CryptoNote::NodeError::NETWORK_ERROR:
+        case CryptoNote::NodeError::CONNECT_ERROR:
         {
             std::cout << WarningMsg("Couldn't connect to the network "
                                     "to send the transaction!")
@@ -1033,7 +1022,7 @@ AddressType parseAddress(std::string address)
         WalletConfig::addressPrefix)
     {
         std::cout << WarningMsg("Invalid address! It should start with ")
-                  << WarningMsg(WalletConfig::addressPrefix)
+                  << WarningMsg(std::string(WalletConfig::addressPrefix))
                   << WarningMsg("!")
                   << std::endl << std::endl;
 
@@ -1077,7 +1066,7 @@ bool parseStandardAddress(std::string address, bool printErrors)
     }
     /* We can't get the actual prefix if the address is invalid for other
        reasons. To work around this, we can just check that the address starts
-       with TRTL, as long as the prefix is the TRTL prefix. This keeps it
+       with ZkRiEGER, as long as the prefix is the ZkRiEGER prefix. This keeps it
        working on testnets with different prefixes. */
     else if (address.substr(0, WalletConfig::addressPrefix.length()) 
           != WalletConfig::addressPrefix)
@@ -1085,7 +1074,7 @@ bool parseStandardAddress(std::string address, bool printErrors)
         if (printErrors)
         {
             std::cout << WarningMsg("Invalid address! It should start with ")
-                      << WarningMsg(WalletConfig::addressPrefix)
+                      << WarningMsg(std::string(WalletConfig::addressPrefix))
                       << WarningMsg("!")
                       << std::endl << std::endl;
         }

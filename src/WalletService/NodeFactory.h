@@ -1,5 +1,5 @@
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
-// Copyright (c) 2018, Algersoft (Kriegerrand Developers)
+//
 // This file is part of Bytecoin.
 //
 // Bytecoin is free software: you can redistribute it and/or modify
@@ -27,7 +27,7 @@ namespace PaymentService {
 
 class NodeFactory {
 public:
-  static CryptoNote::INode* createNode(const std::string& daemonAddress, uint16_t daemonPort, Logging::ILogger& logger);
+  static CryptoNote::INode* createNode(const std::string& daemonAddress, uint16_t daemonPort, std::shared_ptr<Logging::ILogger> logger);
   static CryptoNote::INode* createNodeStub();
 private:
   NodeFactory();

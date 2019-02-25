@@ -1,5 +1,5 @@
 // Copyright (c) 2018, The TurtleCoin Developers
-// Copyright (c) 2018, Algersoft (Kriegerrand Developers)
+// Copyright (c) 2019, AlgerSoft (Kriegerrand Developers)
 // Please see the included LICENSE file for more information.
 
 #pragma once

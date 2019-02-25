@@ -12,10 +12,10 @@ $ sudo apt install python3.6
 $ python3.6 makechange.py
 
 Make two wallets and fill one or both with some funds, or start mining to it.
-Open the wallets with turtle-serivce like so:
+Open the wallets with krieger-api like so:
 
-./turtle-service -w walletA.wallet -p yourpass --rpc-password test --bind-port 8070
-./turtle-service -w walletB.wallet -p yourpass --rpc-password test --bind-port 8071
+./krieger-api -w walletA.wallet -p yourpass --rpc-password test --bind-port 8070
+./krieger-api -w walletB.wallet -p yourpass --rpc-password test --bind-port 8071
 
 Feel free to change these parameters if needed of course.
 
@@ -33,11 +33,11 @@ import sys
 from threading import Thread
 
 # Forks adjust as needed
-moveDecimal = 100  # TRTL has 2 decimals so 100 is the divide/multiply factor
+moveDecimal = 100  # KREGR has 6 decimals so 1000000 is the divide/multiply factor
 minAmount = 100 * moveDecimal  # min number for amount to xfer
 maxAmount = 5000 * moveDecimal  # max number for amount to xfer
 anonymity = 3
-fee = 10 # atomic units, TRTL would be 0.10 as the tx network fee
+fee = 10 # atomic units, KREGR would be 1000 as the tx network fee
 
 def getAddress(host, port, rpcPassword):
     payload = {

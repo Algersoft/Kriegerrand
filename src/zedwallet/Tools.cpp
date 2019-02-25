@@ -1,5 +1,5 @@
 // Copyright (c) 2018, The TurtleCoin Developers
-// 
+// Copyright (c) 2019, AlgerSoft (Kriegerrand Developers)
 // Please see the included LICENSE file for more information.
 
 ////////////////////////////
@@ -19,7 +19,7 @@
 
 #include <iostream>
 
-#include <zedwallet/ColouredMsg.h>
+#include <Utilities/ColouredMsg.h>
 #include <zedwallet/PasswordContainer.h>
 #include <config/WalletConfig.h>
 
@@ -37,7 +37,7 @@ void confirmPassword(const std::string &walletPass, const std::string &msg)
 }
 
 /* Get the amount we need to divide to convert from atomic to pretty print,
-   e.g. 100 for 2 decimal places */
+   e.g. 1000000  for 6 decimal places */
 uint64_t getDivisor()
 {
     return static_cast<uint64_t>(pow(10, WalletConfig::numDecimalPlaces));
@@ -67,7 +67,7 @@ std::string formatDollars(const uint64_t amount)
     /* We want to format our number with comma separators so it's easier to
        use. Now, we could use the nice print_money() function to do this.
        However, whilst this initially looks pretty handy, if we have a locale
-       such as ja_JP.utf8, 1 TRTL will actually be formatted as 100 TRTL, which
+       such as ja_JP.utf8, 1 KREGR will actually be formatted as 1000000 KREGR hich
        is terrible, and could really screw over users.
 
        So, easy solution right? Just use en_US.utf8! Sure, it's not very
@@ -81,7 +81,7 @@ std::string formatDollars(const uint64_t amount)
        the values we want.
        
        It's less internationally friendly than we would potentially like
-       but that would require a ton of scrutinization which if not done could
+       but that would require a ton of scrutinizing which if not done could
        land us with quite a few issues and rightfully angry users.
        Furthermore, we'd still have to hack around cases like JP locale
        formatting things incorrectly, and it makes reading in inputs harder
@@ -110,8 +110,8 @@ std::string formatDollars(const uint64_t amount)
     return stream.str();
 }
 
-/* Pad to the amount of decimal spaces, e.g. with 2 decimal spaces 5 becomes
-   05, 50 remains 50 */
+/* Pad to the amount of decimal spaces, e.g. with 6 decimal spaces 5 becomes
+   500000, 50 remains 500000 */
 std::string formatCents(const uint64_t amount)
 {
     std::stringstream stream;
@@ -133,9 +133,7 @@ bool confirm(const std::string &msg, const bool defaultReturn)
        example when you hit enter */
     std::string prompt = " (Y/n): ";
 
-    /* Yes, I know I can do !defaultReturn. It doesn't make as much sense
-       though. If someone deletes this comment to make me look stupid I'll be
-       mad >:( */
+    /* Whoops */
     if (defaultReturn == false)
     {
         prompt = " (y/N): ";
@@ -256,7 +254,11 @@ uint64_t getScanHeight()
 
         try
         {
-            return std::stoi(stringHeight);
+            return std::stoull(stringHeight);
+        }
+        catch (const std::out_of_range &)
+        {
+            std::cout << WarningMsg("Input is too large or too small!");
         }
         catch (const std::invalid_argument &)
         {
@@ -311,7 +313,7 @@ bool shutdown(std::shared_ptr<WalletInfo> walletInfo, CryptoNote::INode &node,
 {
     if (alreadyShuttingDown)
     {
-        std::cout << "Patience little turtle, we're already shutting down!" 
+        std::cout << "Patience fellow science & cryptography enthusiast! we're already shutting down!" 
                   << std::endl;
 
         return false;
@@ -367,7 +369,7 @@ bool shutdown(std::shared_ptr<WalletInfo> walletInfo, CryptoNote::INode &node,
     /* Wait for shutdown watcher to finish */
     timelyShutdown.join();
 
-    std::cout << "Bye." << std::endl;
+    std::cout << "Adios Muchachos!." << std::endl;
     
     return true;
 }
@@ -399,9 +401,13 @@ bool parseDaemonAddressFromString(std::string& host, int& port, const std::strin
             port = std::stoi(parts.at(1));
             return true;
         }
-        catch (const std::invalid_argument&)
+        catch (const std::out_of_range &)
         {
-          return false;
+            return false;
+        }
+        catch (const std::invalid_argument &)
+        {
+            return false;
         }
     }
 
