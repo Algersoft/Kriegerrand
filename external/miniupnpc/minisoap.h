@@ -12,4 +12,3 @@ int soapPostSubmit(int, const char *, const char *, unsigned short,
 		   const char *, const char *, const char *);
 
 #endif
-

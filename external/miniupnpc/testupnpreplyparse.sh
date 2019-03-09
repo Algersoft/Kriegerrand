@@ -11,4 +11,3 @@ for f in testreplyparse/*.xml ; do
 done
 
 exit 0
-

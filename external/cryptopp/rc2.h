@@ -88,4 +88,3 @@ typedef RC2::Decryption RC2Decryption;
 NAMESPACE_END
 
 #endif
-

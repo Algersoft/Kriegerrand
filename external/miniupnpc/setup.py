@@ -15,4 +15,3 @@ setup(name="miniupnpc", version="1.7",
 	         Extension(name="miniupnpc", sources=["miniupnpcmodule.c"],
 			           extra_objects=["libminiupnpc.a"])
 			 ])
-

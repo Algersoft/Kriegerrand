@@ -49,4 +49,3 @@ while True:
 	i = i + 1
 
 print u.getspecificportmapping(port, proto)
-

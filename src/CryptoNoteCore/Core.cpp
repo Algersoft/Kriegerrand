@@ -2842,4 +2842,3 @@ std::time_t Core::getStartTime() const
 }
 
 }
-

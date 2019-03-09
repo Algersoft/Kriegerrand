@@ -117,5 +117,3 @@ int soapPostSubmit(int fd,
 #endif
 	return httpWrite(fd, body, bodysize, headerbuf, headerssize);
 }
-
-

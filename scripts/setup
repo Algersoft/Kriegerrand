@@ -79,6 +79,3 @@ cp miner ~/.Crypto/Kriegerrand/miner
 cp zedwallet ~/.Crypto/Kriegerrand/zedwallet
 cp MindBraind ~/.Crypto/Kriegerrand/MindBraind
 cp krieger-api ~/.Crypto/Kriegerrand/krieger-api
-
-
-

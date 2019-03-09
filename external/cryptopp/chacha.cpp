@@ -149,4 +149,3 @@ template class ChaCha_Policy<12>;
 template class ChaCha_Policy<20>;
 
 NAMESPACE_END
-

@@ -1067,4 +1067,3 @@ void SubWallets::toJSON(rapidjson::Writer<rapidjson::StringBuffer> &writer) cons
 
     writer.EndObject();
 }
-

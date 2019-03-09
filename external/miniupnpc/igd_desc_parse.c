@@ -121,5 +121,3 @@ void printIGD(struct IGDdatas * d)
 	printf(" eventSubURL = '%s'\n", d->IPv6FC.eventsuburl);
 	printf(" SCPDURL = '%s'\n", d->IPv6FC.scpdurl);
 }
-
-

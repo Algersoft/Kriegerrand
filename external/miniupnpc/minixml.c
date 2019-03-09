@@ -225,5 +225,3 @@ void parsexml(struct xmlparser * parser)
 	parser->xmlend = parser->xmlstart + parser->xmlsize;
 	parseelt(parser);
 }
-
-

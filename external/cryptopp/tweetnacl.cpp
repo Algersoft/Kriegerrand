@@ -895,6 +895,3 @@ NAMESPACE_END  // CryptoPP
 NAMESPACE_END  // NaCl
 
 #endif  // NO_OS_DEPENDENCE
-
-
-

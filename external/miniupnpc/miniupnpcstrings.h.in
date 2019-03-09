@@ -12,4 +12,3 @@
 #define MINIUPNPC_VERSION_STRING "version"
 
 #endif
-

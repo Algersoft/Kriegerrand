@@ -14,6 +14,3 @@ curl --silent 'http://blocks.turtle.link/daemon/json_rpc' --data '{"jsonrpc":"2.
 
 
 
-
-
-

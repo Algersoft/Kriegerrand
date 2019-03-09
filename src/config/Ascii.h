@@ -56,7 +56,7 @@ const std::string windowsAsciiArt =
 "8 8888 `Y8.     8 8888 `8b.      8 8888 8 8888         `8 8888       .8' 8 8888         8 8888 `8b.     8 8888 `8b.       .8'   `8. `88888.   8      `Y8o. `Y8 8 8888        ,88'  \n"
 "8 8888   `Y8.   8 8888   `8b.    8 8888 8 8888            8888     ,88'  8 8888         8 8888   `8b.   8 8888   `8b.    .888888888. `88888.  8         `Y8o.` 8 8888    ,o88P'  \n"
 "8 8888     `Y8. 8 8888     `88.  8 8888 8 888888888888     `8888888P'    8 888888888888 8 8888     `88. 8 8888     `88. .8'       `8. `88888. 8            `Yo 8 888888888P'  \n"
-"49 6E  4D 65 6D 6F 72 79  4F 66  50 69 67 6C 65 79  49 49		WE DONT ASK WHAT YOULL USE IT FOR		ALGERSOFT.ORG KRIEGERRAND.COM                      \n"
+"49 6e 4d 65 6d 6f 72 79 4f 66 50 69 67 6c 79 49 49 	WE DONT ASK WHAT YOULL USE IT FOR		ALGERSOFT.ORG KRIEGERRAND.COM                      \n"
 "\n					\n";
 
 const std::string nonWindowsAsciiArt = 
@@ -122,13 +122,10 @@ const std::string nonWindowsAsciiArt =
 "                                                                  .:l'         .:llllooollloloc.                               \n"
 "                                                                   ;l.        .clcllllllllllcl:.                               \n"
 "                                                                    .          ................                                \n"
-"                              ______     __         ______     ______     ______     ______     ______     ______   ______          \n"                                                                                                                                                                      
-"                             |\  __ \   |\ \       |   ___\   |\  ___\   |\  == \   |\  ___\   |\  __ \   |\  ___\ |\__  _\ .ORG         \n"                                                                                                                                                                   
-"                             \ \  __ \  \ \ \____  \ \ \__ \  \ \  __\   \ \  __<   \ \___  \  \ \ \|\ \  \ \  __\ \|_|\ \|                   \n"                                                                                                                                                              
-"                              \ \_\ \_\  \ \_____\  \ \_____\  \ \_____\  \ \_\ \_\  \|\_____\  \ \_____\  \ \_\      \ \_\                        \n"                                                                                                                                                        
-"                               \|_|\|_|   \|_____|   \|_____|   \|_____|   \|_| |_|   \|_____|   \|_____|   \|_|       \|_|     \n"
-"															WE DONT ASK WHAT YOULL USE IT FOR  \n"
-"\n				\n";
+" WE DONT ASK WHAT YOULL USE IT FOR  \n"
+" ALGERSOFT.org  KRIEGERRAND.com \n"
+"\n				\n";             
+
 /* Windows has some characters it won't display in a terminal. If your ascii
    art works fine on Windows and Linux terminals, just replace 'asciiArt' with
    the art itself, and remove these two #ifdefs and above ascii arts */
