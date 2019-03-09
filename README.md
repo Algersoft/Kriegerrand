@@ -1,8 +1,8 @@
 ![image](https://github.com/Algersoft/Kriegerrand/blob/master/logos/Krieggerrand-logo-git.png)
 
-Current Status: In Development 
 #### Build Status
-[![Build Status](https://travis-ci.org/AlgerSoft/Kriegerrand.svg?branch=master)](https://travis-ci.org/AlgerSoft/Kriegerrand) [![Build status](https://ci.appveyor.com/api/projects/status/github/AlgerSoft/Kriegerrand?branch=master&svg=true)](https://ci.appveyor.com/project/AlgerSoft/Kriegerrand)
+[![Build status](https://ci.appveyor.com/api/projects/status/ojcvdpqe6ueq7k05/branch/development?svg=true)](https://ci.appveyor.com/project/DocKrieger/kriegerrand/branch/development)
+
 
 Learn more at our HQ: https://kriegerrand.com
 
