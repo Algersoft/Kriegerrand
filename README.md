@@ -1,6 +1,8 @@
 ![image](https://github.com/Algersoft/Kriegerrand/blob/master/logos/Krieggerrand-logo-git.png)
 
-Current Status: In Development
+Current Status: In Development 
+#### Build Status
+[![Build Status](https://travis-ci.org/AlgerSoft/Kriegerrand.svg?branch=master)](https://travis-ci.org/AlgerSoft/Kriegerrand) [![Build status](https://ci.appveyor.com/api/projects/status/github/AlgerSoft/Kriegerrand?branch=master&svg=true)](https://ci.appveyor.com/project/AlgerSoft/Kriegerrand)
 
 Learn more at our HQ: https://kriegerrand.com
 
@@ -29,7 +31,7 @@ If you are using Clang, you will need Clang 5.0 or higher. You will also need li
 - `sudo pip install cmake`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
+- `git clone -b development --single-branch https://github.com/Algersoft/Kriegerrand`
 - `cd Kriegerrand`
 - `mkdir build`
 - `cd build`
