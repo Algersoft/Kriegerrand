@@ -542,4 +542,3 @@ initminiupnpc(void)
     return m;
 #endif
 }
-

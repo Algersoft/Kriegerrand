@@ -45,4 +45,3 @@ void IGDdata(void *, const char *, int);
 void printIGD(struct IGDdatas *);
 
 #endif
-

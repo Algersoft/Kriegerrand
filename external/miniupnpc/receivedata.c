@@ -105,5 +105,3 @@ receivedata(int socket,
 #endif
 	return n;
 }
-
-

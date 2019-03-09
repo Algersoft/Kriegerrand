@@ -130,4 +130,3 @@ getDevicesFromMiniSSDPD(const char * devtype, const char * socketpath)
 	close(s);
 	return devlist;
 }
-

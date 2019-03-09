@@ -1094,5 +1094,3 @@ UPNP_GetPinholePackets(const char * controlURL, const char * servicetype,
 	free(GetPinholePacketsArgs);
 	return ret;
 }
-
-

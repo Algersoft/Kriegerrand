@@ -12,4 +12,3 @@ struct UPNPDev *
 getDevicesFromMiniSSDPD(const char * devtype, const char * socketpath);
 
 #endif
-

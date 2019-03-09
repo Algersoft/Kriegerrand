@@ -1,5 +1,5 @@
 // Copyright (c) 2018, The TurtleCoin Developers
-// 
+// Copyright (c) 2019, AlgerSoft (Kriegerrand Developers)
 // Please see the included LICENSE file for more information.
 
 ////////////////////////////////
@@ -12,12 +12,12 @@ std::vector<Command> startupCommands()
 {
     return 
     {
-        Command("open", "Open a wallet already on your system"),
-        Command("create", "Create a new wallet"),
-        Command("seed_restore", "Restore a wallet using a seed phrase of words"),
-        Command("key_restore", "Restore a wallet using a view and spend key"),
-        Command("view_wallet", "Import a view only wallet"),
-        Command("exit", "Exit the program"),
+        Command("open", "Open a wallet that already exists"),
+        Command("create", "Create a shiny new wallet"),
+        Command("seed_restore", "Restore a wallet by using your kriegerrand wallet seed word"),
+        Command("key_restore", "Restore a wallet with the view and spend keys"),
+        Command("view_wallet", "Import a view only version of your wallet"),
+        Command("exit", "Exit KriegerBank?"),
     };
 }
 
@@ -36,7 +36,7 @@ std::vector<AdvancedCommand> allCommands()
     return
     {
         /* Basic commands */
-        AdvancedCommand("advanced", "List available advanced commands", true, false),
+        AdvancedCommand("advanced", "Commands for Advanced Kriegerrand Users", true, false),
         AdvancedCommand("address", "Display your payment address", true, false),
         AdvancedCommand("balance", "Display how much " + WalletConfig::ticker + " you have", true, false),
         AdvancedCommand("backup", "Backup your private keys and/or seed", true, false),
@@ -45,10 +45,10 @@ std::vector<AdvancedCommand> allCommands()
         AdvancedCommand("transfer", "Send " + WalletConfig::ticker + " to someone", false, false),
         
         /* Advanced commands */
-        AdvancedCommand("ab_add", "Add a person to your address book", true, true),
-        AdvancedCommand("ab_delete", "Delete a person in your address book", true, true),
-        AdvancedCommand("ab_list", "List everyone in your address book", true, true),
-        AdvancedCommand("ab_send", "Send " + WalletConfig::ticker + " to someone in your address book", false, true),
+        AdvancedCommand("ab_add", "Add a person to your burn book (address booke)", true, true),
+        AdvancedCommand("ab_delete", "Delete a person in your burn book", true, true),
+        AdvancedCommand("ab_list", "List everyone in your burn book", true, true),
+        AdvancedCommand("ab_send", "Send " + WalletConfig::ticker + " to someone in your burn book", false, true),
         AdvancedCommand("change_password", "Change your wallet password", true, true),
         AdvancedCommand("make_integrated_address", "Make a combined address + payment ID", true, true),
         AdvancedCommand("incoming_transfers", "Show incoming transfers", true, true),

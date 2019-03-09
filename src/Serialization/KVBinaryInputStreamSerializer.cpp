@@ -203,4 +203,3 @@ bool KVBinaryInputStreamSerializer::binary(void* value, uint64_t size, Common::S
 bool KVBinaryInputStreamSerializer::binary(std::string& value, Common::StringView name) {
   return (*this)(value, name); // load as string
 }
-

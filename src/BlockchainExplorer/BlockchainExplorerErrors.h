@@ -63,4 +63,3 @@ private:
 inline std::error_code make_error_code(CryptoNote::error::BlockchainExplorerErrorCodes e) {
   return std::error_code(static_cast<int>(e), CryptoNote::error::BlockchainExplorerErrorCategory::INSTANCE);
 }
-

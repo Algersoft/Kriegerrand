@@ -93,4 +93,3 @@ else
 	echo "directory ${TMPD} is left intact"
 fi
 exit $RET
-

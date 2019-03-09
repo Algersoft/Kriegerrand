@@ -157,4 +157,3 @@ FreePortListing(struct PortMappingParserData * pdata)
 		free(pm);
 	}
 }
-

@@ -1,6 +1,6 @@
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2018, The TurtleCoin Developers
-// Copyright (c) 2018, Algersoft (Kriegerrand Developers)
+// Copyright (c) 2019, AlgerSoft (Kriegerrand Developers)
 // Please see the included LICENSE file for more information.
 
 #include <iostream>
@@ -28,7 +28,7 @@
 #include <errno.h>
 #endif
 
-#define SERVICE_NAME "Kriegerrand-Service"
+#define SERVICE_NAME "Krieger-API"
 
 PaymentGateService* ppg;
 

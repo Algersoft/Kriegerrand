@@ -258,4 +258,3 @@ int connecthostport(const char * host, unsigned short port,
 #endif /* #ifdef USE_GETHOSTBYNAME */
 	return s;
 }
-

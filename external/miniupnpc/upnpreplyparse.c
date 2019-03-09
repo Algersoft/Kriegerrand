@@ -181,4 +181,3 @@ DisplayNameValueList(char * buffer, int bufsize)
     ClearNameValueList(&pdata);
 }
 #endif
-

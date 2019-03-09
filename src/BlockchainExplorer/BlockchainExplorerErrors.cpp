@@ -24,4 +24,3 @@ BlockchainExplorerErrorCategory BlockchainExplorerErrorCategory::INSTANCE;
 
 } //namespace error
 } //namespace CryptoNote
-

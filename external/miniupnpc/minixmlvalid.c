@@ -155,4 +155,3 @@ int main(int argc, char * * argv)
 		printf("minixml validation test failed\n");
 	return r;
 }
-

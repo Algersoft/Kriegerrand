@@ -1,5 +1,5 @@
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
-// Copyright (c) 2018, Algersoft (Kriegerrand Developers)
+// Copyright (c) 2019, AlgerSoft (Kriegerrand Developers)
 // This file is part of Bytecoin.
 //
 // Bytecoin is free software: you can redistribute it and/or modify
@@ -26,6 +26,6 @@ struct CheckpointData {
   const char* blockId;
 };
 
-const std::initializer_list<CheckpointData> CHECKPOINTS = {
+const std::initializer_list<CheckpointData> CHECKPOINTS = {  
 };
 }

@@ -27,4 +27,3 @@ int parseURL(const char *, char *, unsigned short *, char * *, unsigned int *);
 #endif
 
 #endif
-

@@ -15,4 +15,3 @@ setup(name="miniupnpc", version="1.7",
 	                   libraries=["ws2_32", "iphlpapi"],
 			           extra_objects=["libminiupnpc.a"])
 			 ])
-
