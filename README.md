@@ -65,7 +65,7 @@ You need to modify the below command for your version of ubuntu - see https://ap
 - `sudo pip install cmake`
 - `export CC=clang-6.0`
 - `export CXX=clang++-6.0`
-- `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
+- `git clone -b development --single-branch https://github.com/Algersoft/Kriegerrand`
 - `cd Kriegerrand`
 - `mkdir build`
 - `cd build`
@@ -84,7 +84,7 @@ Ensure you have the dependencies listed above.
 If you want to use clang, ensure you set the environment variables `CC` and `CXX`.
 See the ubuntu instructions for an example.
 
-- `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
+- `git clone -b development --single-branch https://github.com/Algersoft/Kriegerrand`
 - `cd Kriegerrand`
 - `mkdir build`
 - `cd build`
@@ -107,7 +107,7 @@ The binaries will be in the `src` folder when you are complete.
 
 ##### Building
 
-- `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
+- `git clone -b development --single-branch https://github.com/Algersoft/Kriegerrand`
 - `cd Kriegerrand`
 - `mkdir build && cd $_`
 - `cmake ..` or `cmake -DBOOST_ROOT=<path_to_boost_install> ..` when building
@@ -162,7 +162,7 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 
 ##### Building
 
-- `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
+- `git clone -b development --single-branch https://github.com/Algersoft/Kriegerrand`
 - `cd Kriegerrand`
 - `mkdir build`
 - `cd build`
