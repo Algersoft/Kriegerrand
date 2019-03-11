@@ -29,7 +29,7 @@ If you are using Clang, you will need Clang 5.0 or higher. You will also need li
 - `sudo aptitude install -y build-essential g++-8 gcc-8 git libboost-all-dev python-pip`
 - `sudo pip install cmake`
 - `export CC=gcc-8`
-- `export CXX=g++-8`
+- `export CXX=g++-8` 
 - `git clone -b master --single-branch https://github.com/Algersoft/Kriegerrand`
 - `cd Kriegerrand`
 - `mkdir build`
